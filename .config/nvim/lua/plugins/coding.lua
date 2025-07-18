@@ -37,7 +37,7 @@ return {
     "zbirenbaum/copilot.lua",
     opts = {
       suggestion = {
-        auto_trigger = true,
+        auto_trigger = false,
         keymap = {
           accept = false,
           accept_word = "<M-l>",

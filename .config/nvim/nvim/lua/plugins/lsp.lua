@@ -4,14 +4,33 @@ return {
     "williamboman/mason.nvim",
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
-        "stylua",
-        "selene",
-        "luacheck",
-        "shellcheck",
-        "shfmt",
-        "tailwindcss-language-server",
+
+        -- 🟦 Angular & TypeScript
+        "angular-language-server",
         "typescript-language-server",
+        "prettier",
+
+        -- 🎨 Tailwind & CSS
+        "tailwindcss-language-server",
         "css-lsp",
+
+        -- 📄 Markdown
+        "marksman", -- LSP
+        "prettier", -- formatter
+
+        -- 🐍 Python
+        "pyright", -- LSP
+        "black", -- formatter
+
+        -- 🦀 Rust
+        "rust-analyzer", -- LSP
+        "rustfmt", -- formatter
+
+        -- 🐚 Shell
+        "shfmt", -- formatter
+
+        -- 🌙 Lua
+        "stylua", -- formatter
       })
     end,
   },
